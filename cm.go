@@ -4,9 +4,10 @@ import (
 	"encoding/binary"
 	"hash"
 	"hash/fnv"
+	"math"
 )
 
-const maxInt = 100000
+const maxInt = math.MaxInt64
 
 // CountMinSketch is implementation of Count Min Sketch
 type CountMinSketch struct {
